@@ -77,7 +77,7 @@ body{
     background-color: coral;
 }
 
-#btn{
+#all-delete-btn{
     font-size: 1.5rem;
     border: 0;
     padding: 5px;
@@ -88,7 +88,7 @@ body{
     display: none;
 }
 
-#btn:hover {
+#all-delete-btn:hover {
     background-color: coral;
 }
 
