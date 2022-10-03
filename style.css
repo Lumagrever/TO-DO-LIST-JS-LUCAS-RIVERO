@@ -7,6 +7,14 @@
     font-family: 'Nunito', sans-serif;
   }
 
+  :root {
+    --oscuro: #2A2240;
+    --rojo: #F00814;
+    --celeste: #51d1f6;
+    --dorado: gold;
+    --coral: coral;
+  }
+
   html {
 	scroll-behavior: smooth;
 	scroll-padding: 100px;
@@ -14,7 +22,7 @@
 
 body{
     width: 100%;
-    background-color: rgb(46, 44, 44);
+    background-color: var(--oscuro)
 }
 
 .to-do-list {
@@ -23,7 +31,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    color: gold;
+    color: var(--dorado);
 }
 
 .to-do-list img {
@@ -39,11 +47,11 @@ body{
 
 .add-task {
     gap: 20px;
-    
+
 }
 
 .input-task {
-    background-color: rgb(127, 217, 255);
+    background-color: white;
     border-radius: 5px;
     font-size: 1.5rem;
     padding: 5px;
@@ -53,10 +61,15 @@ body{
     border: 0;
     outline: none;
     font-size: 20px;
-    background-color: rgb(127, 217, 255);
+    background-color: white;
     border-radius: 5px;
     font-size: 1.5rem;
-    color: rgb(46, 44, 44);
+    color: var(--oscuro)
+}
+
+.input-task ::placeholder {
+    color: var(--oscuro);
+    font-weight: 500;
 }
 
 .input-task img {
@@ -65,42 +78,102 @@ body{
 
 .add-task button {
     font-size: 1.5rem;
+    font-weight: 500;
     border: 0;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: gold;
-    color: rgb(46, 44, 44);
+    background-color: var(--dorado);
+    color: var(--oscuro)
 }
 
 .add-task button:hover {
-    background-color: coral;
+    background-color: rgb(136, 238, 47);
+    transition: 300ms;
 }
 
-#all-delete-btn{
+.tasks-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    gap: 1rem;
+}
+
+.tasks-list li {
+    background: white;
+    border: 5px solid grey;
+    color: var(--oscuro);
+    font-weight: bold;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px 0px;
+    user-select: none;
+}
+
+.tasks-list img {
+    width: 40px;
+    cursor: pointer;
+    background-color: var(--coral);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tasks-list img:hover {
+    transition: 300ms;
+    background-color: var(--rojo);
+}
+
+#delete-btn {
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.all-delete-btn{
+    font-size: 1.5rem;
+    font-weight: 500;
     border: 0;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: gold;
-    color: rgb(46, 44, 44);
-    display: none;
+    background-color: var(--dorado);
+    color: var(--oscuro);
+    margin-top: 50px;
 }
 
-#all-delete-btn:hover {
-    background-color: coral;
+.all-delete-btn:hover {
+    background-color: var(--rojo);
+    color: white;
+    transition: 300ms;
 }
+
+.hidden {
+    visibility: hidden;
+  }
 
 .footer-container p {
-    color: gold;
+    color: var(--dorado);
     font-weight: bold;
 }
 
 .footer-container b {
-    color: rgb(127, 217, 255);;
+    color: var(--celeste);
 }
 
 .footer-container b:hover {
-    color: coral;
+    color: var(--coral);
 }
