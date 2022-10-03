@@ -112,18 +112,18 @@ body{
     border: 3px solid grey;
     color: var(--oscuro);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.8rem 0.5rem;
     border-radius: 20px 0px;
     user-select: none;
 }
 
 .tasks-list img {
-    width: 30px;
+    width: 35px;
     cursor: pointer;
     background-color: var(--coral);
     border-radius: 5px;
