@@ -150,7 +150,6 @@ body{
 .all-delete-btn:hover {
     background-color: var(--rojo);
     color: white;
-    transition: 300ms;
 }
 
 .hidden {
