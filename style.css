@@ -185,20 +185,25 @@ body{
     
     .add-task {
         gap: 1.2rem;
+
     }
-    
+
     .input-task {
-        padding: 5px 3px;
+        font-size: 1.1rem;
     }
-    
-    
+
+    .input-task input {
+        font-size: 1.1rem;
+    }
+
     .input-task img {
         width: 1.1rem;
     }
-    
+
     .add-task button {
-        padding: 5px 3px;
+        font-size: 1.1rem;
     }
+
     
     .tasks-list {
         margin-top: 30px;
