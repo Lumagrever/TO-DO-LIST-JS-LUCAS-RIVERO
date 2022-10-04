@@ -183,29 +183,6 @@ body{
         margin-top: 20px;
     }
     
-    .add-task {
-        gap: 1.2rem;
-    
-    }
-    
-    .input-task {
-        font-size: 1rem;
-        padding: 3px;
-    }
-    
-    .input-task input {
-        font-size: 1rem;
-    }
-    
-    .input-task img {
-        width: 1rem;
-    }
-    
-    .add-task button {
-        font-size: 1rem;
-        padding: 3px;
-    }
-    
     .tasks-list {
         margin-top: 30px;
         width: 320px;
